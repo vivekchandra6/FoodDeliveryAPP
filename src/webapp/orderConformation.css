@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #F3D7CA;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+}
+
+.user-links {
+    display: flex;
+    align-items: center;
+}
+
+.user-links p {
+    margin: 0 10px;
+    color: #ecf0f1;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.btn {
+    background-color: #1D2B53;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4A013E;
+}
+
+.order-confirmation {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-details {
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-details h2 {
+    margin-bottom: 10px;
+}
+
+.order-details p {
+    margin: 5px 0;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.no-more-button {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-links {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .user-links form input {
+        margin-top: 10px;
+    }
+}

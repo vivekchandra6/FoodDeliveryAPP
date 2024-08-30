@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+/* Styles for restaurant container */
+.restaurant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styles for individual restaurant items */
+.restaurant-item {
+    flex: 0 0 calc(22% - 20px); /* 25% minus margin to fit 4 items in a row */
+    margin: 20px 0;
+    text-align: center;
+    box-sizing: border-box; /* Adjusts the box model */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styles for restaurant names and order buttons */
+.restaurant-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.restaurant-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color:#6499E9; /* Adding background color to the restaurant name */
+    padding: 5px 10px; /* Adding padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Displaying the restaurant name as a block element */
+}
+
+.order-button {
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #FF5733;
+}
+
+
+
